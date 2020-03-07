@@ -36,7 +36,7 @@ public without sharing class APPLogger  {
     public static void addLog(String message){ 
         
 
-        system.debug('demo changed again');
+         system.debug('demo');
 
         // Proceed only if the logging is turned on 
         if(!loggerSettings.Enable_Logging__c) return;
