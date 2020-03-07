@@ -37,6 +37,7 @@ public without sharing class APPLogger  {
         
 
         system.debug('demo changed again');
+        system.debug('Auto Merge request');
 
         // Proceed only if the logging is turned on 
         if(!loggerSettings.Enable_Logging__c) return;
