@@ -116,7 +116,7 @@ public without sharing class APPLogger  {
     // If an exception is thrown then this will allow us to invoke save in a separate future transaction
     @future 
     public static void saveLogsInFuture(){
-        system.debug('classic changed');
+        system.debug('classic changed. try pull request');
         saveLog();
     }
 
