@@ -77,6 +77,7 @@ public without sharing class APPLogger  {
     // It is possible that the saveLog can be called multiple times in a transaction
     // But the method should be intelligent enough to know to commit to chatter only if the transaction that initiated the log is saving it.
     public static void saveLog(){
+        system.debug('Save');
         // Proceed only if the logging is turned on 
         if(!loggerSettings.Enable_Logging__c) return;
 
