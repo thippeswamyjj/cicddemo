@@ -116,8 +116,11 @@ public without sharing class APPLogger  {
     // If an exception is thrown then this will allow us to invoke save in a separate future transaction
     @future 
     public static void saveLogsInFuture(){
+        
+        Attachment a  = [select id from attachment limit 5];
+        
         system.debug('classic changed. try pull request');
-        saveLog();
+        saveLog(); 
     }
 
     // An interesting idea by Jayaramappa Thippeswamy to use SerializationException class to get the stack trace and hence the calling class and method name
