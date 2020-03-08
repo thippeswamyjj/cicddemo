@@ -117,7 +117,7 @@ public without sharing class APPLogger  {
     @future 
     public static void saveLogsInFuture(){
         system.debug('classic changed. try pull request');
-        saveLog();
+        saveLog(); 
     }
 
     // An interesting idea by Jayaramappa Thippeswamy to use SerializationException class to get the stack trace and hence the calling class and method name
