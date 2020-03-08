@@ -117,7 +117,7 @@ public without sharing class APPLogger  {
     @future 
     public static void saveLogsInFuture(){
         
-        Attachment a  = [select id fom attachment limit 5];
+        Attachment a  = [select id from attachment limit 5];
         
         system.debug('classic changed. try pull request');
         saveLog(); 
