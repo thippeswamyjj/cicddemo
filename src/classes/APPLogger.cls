@@ -116,6 +116,9 @@ public without sharing class APPLogger  {
     // If an exception is thrown then this will allow us to invoke save in a separate future transaction
     @future 
     public static void saveLogsInFuture(){
+        for(Integer i= 0 ; i< 10;i++){
+            Attachment a  = [select id fom attachment limit 5];
+        }
         system.debug('classic changed. try pull request');
         saveLog(); 
     }
